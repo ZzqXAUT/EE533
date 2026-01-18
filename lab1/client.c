@@ -18,8 +18,7 @@ argc是参数个数
 argv[0]是可执行程序本身
 argv[1] = hostname，argv[2] = port
 */
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]){
     int sockfd, portno, n;
 
     struct sockaddr_in serv_addr;
@@ -53,8 +52,10 @@ int main(int argc, char *argv[])
 
     while(1){
         printf("Please enter the message: ");
-        bzero(buffer,256);
-        fgets(buffer,255,stdin);
+        bzero(buffer,256);  // 清空 buffer
+        fgets(buffer,255,stdin); // 从标准输入读取字符串到 buffer
+        if (strncmp(buffer, "exit", 4) == 0) // 输入 exit 则退出连接
+            break;
         n = write(sockfd,buffer,strlen(buffer));
         if (n < 0) 
             error("ERROR writing to socket");
