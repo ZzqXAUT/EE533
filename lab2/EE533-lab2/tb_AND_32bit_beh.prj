@@ -1,0 +1,2 @@
+vhdl work "AndGate_32bit.vhf"
+vhdl work "tb_AND_32bit.vhw"

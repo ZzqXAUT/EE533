@@ -1,0 +1,4 @@
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/FullAdder_1bit.sch" FullAdder_1bit.vhf
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/FullAdder_1bit.sch" FullAdder_1bit.vhf
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/FullAdder_1bit.sch" FullAdder_1bit.vhf
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/FullAdder_1bit.sch" FullAdder_1bit.vhf

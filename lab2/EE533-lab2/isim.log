@@ -1,0 +1,45 @@
+Command line:
+   ./tb_FA_32bit_DFF_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  1050
+
+Sat Jan 24 21:15:18 2026
+
+Total Line Count : 170
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 142.688 Meg
+
+ Total Signals          : 1173
+ Total Nets             : 413
+ Total Signal Drivers   : 239
+ Total Blocks           : 283
+ Total Primitive Blocks : 234
+ Total Processes        : 236
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 1439
+ntrace select -o on -n /tb_fa_32bit_dff/a 
+ntrace select -o on -n /tb_fa_32bit_dff/add_sub 
+ntrace select -o on -n /tb_fa_32bit_dff/b_ini 
+ntrace select -o on -n /tb_fa_32bit_dff/cin 
+ntrace select -o on -n /tb_fa_32bit_dff/clk 
+ntrace select -o on -n /tb_fa_32bit_dff/en 
+ntrace select -o on -n /tb_fa_32bit_dff/rst 
+ntrace select -o on -n /tb_fa_32bit_dff/cout 
+ntrace select -o on -n /tb_fa_32bit_dff/s 
+ntrace select -o on -n /tb_fa_32bit_dff/period 
+ntrace select -o on -n /tb_fa_32bit_dff/duty_cycle 
+ntrace select -o on -n /tb_fa_32bit_dff/offset 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 153.24 Meg
+
+Sat Jan 24 21:17:37 2026
+

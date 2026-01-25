@@ -1,0 +1,103 @@
+Determining compilation order of HDL files
+Analyzing VHDL file FullAdder_1bit.vhf
+Restoring VHDL parse-tree ieee.std_logic_1164 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree std.standard from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/standard.vdb
+Restoring VHDL parse-tree ieee.numeric_std from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/numeric_std.vdb
+Restoring VHDL parse-tree unisim.vcomponents from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Analyzing VHDL file Mux_32bit_2_1.vhf
+Analyzing VHDL file INV_32bit.vhf
+Analyzing VHDL file FullAdder_8bit.vhf
+Analyzing VHDL file DFF_32bit.vhf
+Analyzing VHDL file FullAdder_32bit_DFF.vhf
+Analyzing VHDL file tb_FA_32bit_DFF.vhw
+Restoring VHDL parse-tree ieee.std_logic_textio from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_textio.vdb
+Restoring VHDL parse-tree std.textio from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/textio.vdb
+Restoring VHDL parse-tree ieee.std_logic_arith from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_arith.vdb
+Restoring VHDL parse-tree ieee.std_logic_unsigned from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_unsigned.vdb
+Saving VHDL parse-tree work.fulladder_1bit into c:/documents and
+settings/student/ee533-lab2/isim/work/fulladder_1bit.vdb
+Saving VHDL parse-tree work.m2_1_hxilinx_mux_32bit_2_1 into c:/documents and
+settings/student/ee533-lab2/isim/work/m2_1_hxilinx_mux_32bit_2_1.vdb
+Saving VHDL parse-tree work.mux_32bit_2_1 into c:/documents and
+settings/student/ee533-lab2/isim/work/mux_32bit_2_1.vdb
+Saving VHDL parse-tree work.inv16_hxilinx_inv_32bit into c:/documents and
+settings/student/ee533-lab2/isim/work/inv16_hxilinx_inv_32bit.vdb
+Saving VHDL parse-tree work.inv_32bit into c:/documents and
+settings/student/ee533-lab2/isim/work/inv_32bit.vdb
+Saving VHDL parse-tree work.fulladder_8bit into c:/documents and
+settings/student/ee533-lab2/isim/work/fulladder_8bit.vdb
+Saving VHDL parse-tree work.fd16ce_hxilinx_dff_32bit into c:/documents and
+settings/student/ee533-lab2/isim/work/fd16ce_hxilinx_dff_32bit.vdb
+Saving VHDL parse-tree work.dff_32bit into c:/documents and
+settings/student/ee533-lab2/isim/work/dff_32bit.vdb
+Saving VHDL parse-tree work.m2_1_hxilinx_fulladder_32bit_dff into c:/documents
+and settings/student/ee533-lab2/isim/work/m2_1_hxilinx_fulladder_32bit_dff.vdb
+Saving VHDL parse-tree work.fulladder_32bit_dff into c:/documents and
+settings/student/ee533-lab2/isim/work/fulladder_32bit_dff.vdb
+Saving VHDL parse-tree work.tb_fa_32bit_dff into c:/documents and
+settings/student/ee533-lab2/isim/work/tb_fa_32bit_dff.vdb
+Starting static elaboration
+WARNING:HDLCompiler:746 - "N:/K.31/rtf/vhdl/src/ieee/numeric_std.vhd" Line 867.
+   Range is empty (null range)
+WARNING:HDLCompiler:746 - "N:/K.31/rtf/vhdl/src/ieee/numeric_std.vhd" Line 868.
+   Range is empty (null range)
+Restoring VHDL parse-tree unisim.xor2 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.and2 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.or3 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.gnd from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.inv from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Restoring VHDL parse-tree unisim.fdce from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Completed static elaboration
+Fuse Memory Usage: 61320 Kb
+Fuse CPU Usage: 358 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package numeric_std from library ieee
+Using precompiled package textio from library std
+Using precompiled package std_logic_textio from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Compiling package vcomponents
+Compiling architecture xor2_v of entity xor2 [xor2_default]
+Compiling architecture and2_v of entity and2 [and2_default]
+Compiling architecture or3_v of entity or3 [or3_default]
+Compiling architecture behavioral of entity fulladder_1bit
+[fulladder_1bit_default]
+Compiling architecture behavioral of entity fulladder_8bit
+[fulladder_8bit_default]
+Compiling architecture inv16_hxilinx_inv_32bit_v of entity
+inv16_hxilinx_inv_32bit [inv16_hxilinx_inv_32bit_default]
+Compiling architecture behavioral of entity inv_32bit [inv_32bit_default]
+Compiling architecture gnd_v of entity gnd [gnd_default]
+Compiling architecture inv_v of entity inv [inv_default]
+Compiling architecture m2_1_hxilinx_fulladder_32bit_dff_v of entity
+m2_1_hxilinx_fulladder_32bit_dff [m2_1_hxilinx_fulladder_32bit_dff...]
+Compiling architecture m2_1_hxilinx_mux_32bit_2_1_v of entity
+m2_1_hxilinx_mux_32bit_2_1 [m2_1_hxilinx_mux_32bit_2_1_defau...]
+Compiling architecture behavioral of entity mux_32bit_2_1
+[mux_32bit_2_1_default]
+Compiling architecture fdce_v of entity fdce [\FDCE('0')\]
+Compiling architecture behavioral of entity fd16ce_hxilinx_dff_32bit
+[fd16ce_hxilinx_dff_32bit_default]
+Compiling architecture behavioral of entity dff_32bit [dff_32bit_default]
+Compiling architecture behavioral of entity fulladder_32bit_dff
+[fulladder_32bit_dff_default]
+Compiling architecture testbench_arch of entity tb_fa_32bit_dff
+Compiled 41 VHDL Units
+Built simulation executable tb_FA_32bit_DFF_isim_beh.exe
+Fuse Memory Usage: 62604 Kb
+Fuse CPU Usage: 421 ms

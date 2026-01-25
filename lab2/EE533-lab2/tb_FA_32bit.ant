@@ -1,0 +1,158 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2003 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 10.1
+--  \   \         Application : ISE
+--  /   /         Filename : tb_FA_32bit.ant
+-- /___/   /\     Timestamp : Sat Jan 24 14:28:13 2026
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: tb_FA_32bit
+--Device: Xilinx
+--
+
+library UNISIM;
+use UNISIM.Vcomponents.ALL;
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY tb_FA_32bit IS
+END tb_FA_32bit;
+
+ARCHITECTURE testbench_arch OF tb_FA_32bit IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "C:\Documents and Settings\student\EE533-lab2\tb_FA_32bit.ano";
+
+    COMPONENT FullAdder_32bit
+        PORT (
+            A : In std_logic_vector (31 DownTo 0);
+            ADD_SUB : In std_logic;
+            B_ini : In std_logic_vector (31 DownTo 0);
+            Cin : In std_logic;
+            Cout : Out std_logic;
+            S : Out std_logic_vector (31 DownTo 0)
+        );
+    END COMPONENT;
+
+    SIGNAL A : std_logic_vector (31 DownTo 0) := "00000000000000000000000000000000";
+    SIGNAL ADD_SUB : std_logic := '0';
+    SIGNAL B_ini : std_logic_vector (31 DownTo 0) := "00000000000000000000000000000000";
+    SIGNAL Cin : std_logic := '0';
+    SIGNAL Cout : std_logic := '0';
+    SIGNAL S : std_logic_vector (31 DownTo 0) := "00000000000000000000000000000000";
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    BEGIN
+        UUT : FullAdder_32bit
+        PORT MAP (
+            A => A,
+            ADD_SUB => ADD_SUB,
+            B_ini => B_ini,
+            Cin => Cin,
+            Cout => Cout,
+            S => S
+        );
+
+        PROCESS    -- Annotation process
+            VARIABLE TX_TIME : INTEGER := 0;
+
+            PROCEDURE ANNOTATE_Cout(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", Cout, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, Cout);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_S(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", S, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, S);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+        BEGIN
+            WAIT for 1 fs;
+            ANNOTATE_Cout(0);
+            ANNOTATE_S(0);
+            ANNO_LOOP : LOOP
+                WAIT for 50 ns;
+                TX_TIME := TX_TIME + 50;
+                ANNOTATE_Cout(TX_TIME);
+                ANNOTATE_S(TX_TIME);
+                WAIT for 50 ns;
+                TX_TIME := TX_TIME + 50;
+            END LOOP ANNO_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  100ns
+                WAIT FOR 100 ns;
+                A <= "00000000000000000000000000000101";
+                B_ini <= "00000000000000000000000000000011";
+                -- -------------------------------------
+                -- -------------  Current Time:  200ns
+                WAIT FOR 100 ns;
+                Cin <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  300ns
+                WAIT FOR 100 ns;
+                Cin <= '0';
+                A <= "11111111111111111111111111111111";
+                B_ini <= "00000000000000000000000000000001";
+                -- -------------------------------------
+                -- -------------  Current Time:  400ns
+                WAIT FOR 100 ns;
+                ADD_SUB <= '1';
+                A <= "00000000000000000000000000001001";
+                B_ini <= "00000000000000000000000000000100";
+                -- -------------------------------------
+                -- -------------  Current Time:  500ns
+                WAIT FOR 100 ns;
+                A <= "00000000000000000000000000000101";
+                B_ini <= "00000000000000000000000000000110";
+                -- -------------------------------------
+                -- -------------  Current Time:  600ns
+                WAIT FOR 100 ns;
+                A <= "00000000000100000000000000000000";
+                B_ini <= "00000000000000000000000000000001";
+                -- -------------------------------------
+                WAIT FOR 400 ns;
+
+                STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                ASSERT (FALSE) REPORT
+                    "Success! Simulation for annotation completed"
+                    SEVERITY FAILURE;
+            END PROCESS;
+
+    END testbench_arch;
+

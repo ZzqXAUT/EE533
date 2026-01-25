@@ -1,0 +1,37 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Documents and Settings/student/EE533-lab2/clk_div_262k.vhd" in Library work.
+Entity <clk_div_262k> compiled.
+Entity <clk_div_262k> (Architecture <divide>) compiled.
+Compiling vhdl file "C:/Documents and Settings/student/EE533-lab2/lcd_control.vhd" in Library work.
+Entity <lcd_control> compiled.
+Entity <lcd_control> (Architecture <lcd_control_arch>) compiled.
+Compiling vhdl file "C:/Xilinx/10.1/ISE/ISEexamples/src/vhdl/time_cnt.vhd" in Library work.
+Entity <time_cnt> compiled.
+ERROR:HDLParsers:3313 - "C:/Xilinx/10.1/ISE/ISEexamples/src/vhdl/time_cnt.vhd" Line 71. Undefined symbol 'elseif'.  Should it be: 'else if' or elsif?
+ERROR:HDLParsers:1209 - "C:/Xilinx/10.1/ISE/ISEexamples/src/vhdl/time_cnt.vhd" Line 71. elseif: Undefined symbol (last report in this block)
+ERROR:HDLParsers:164 - "C:/Xilinx/10.1/ISE/ISEexamples/src/vhdl/time_cnt.vhd" Line 71. parse error, unexpected IDENTIFIER, expecting OPENPAR or TICK or LSQBRACK
+ERROR:HDLParsers:164 - "C:/Xilinx/10.1/ISE/ISEexamples/src/vhdl/time_cnt.vhd" Line 89. parse error, unexpected IF, expecting PROCESS
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> 
+
+Total memory usage is 125556 kilobytes
+
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

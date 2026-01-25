@@ -1,0 +1,708 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Documents and Settings/student/EE533-lab2/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to C:/Documents and Settings/student/EE533-lab2/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: ALU_32bit.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU_32bit.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU_32bit"
+Output Format                      : NGC
+Target Device                      : xc3s700a-4-fg484
+
+---- Source Options
+Top Module Name                    : ALU_32bit
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : ALU_32bit.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Documents and Settings/student/EE533-lab2/FullAdder_1bit.vhf" in Library work.
+Architecture behavioral of Entity fulladder_1bit is up to date.
+Compiling vhdl file "C:/Documents and Settings/student/EE533-lab2/Mux_32bit_2_1.vhf" in Library work.
+Architecture m2_1_hxilinx_mux_32bit_2_1_v of Entity m2_1_hxilinx_mux_32bit_2_1 is up to date.
+Architecture behavioral of Entity mux_32bit_2_1 is up to date.
+Compiling vhdl file "C:/Documents and Settings/student/EE533-lab2/FullAdder_8bit.vhf" in Library work.
+Architecture behavioral of Entity fulladder_8bit is up to date.
+Compiling vhdl file "C:/Documents and Settings/student/EE533-lab2/INV_32bit.vhf" in Library work.
+Architecture inv16_hxilinx_inv_32bit_v of Entity inv16_hxilinx_inv_32bit is up to date.
+Architecture behavioral of Entity inv_32bit is up to date.
+Compiling vhdl file "C:/Documents and Settings/student/EE533-lab2/FullAdder_32bit.vhf" in Library work.
+Architecture m2_1_hxilinx_fulladder_32bit_v of Entity m2_1_hxilinx_fulladder_32bit is up to date.
+Architecture behavioral of Entity fulladder_32bit is up to date.
+Compiling vhdl file "C:/Documents and Settings/student/EE533-lab2/Shift_32bit.vhf" in Library work.
+Architecture m2_1_hxilinx_shift_32bit_v of Entity m2_1_hxilinx_shift_32bit is up to date.
+Architecture behavioral of Entity shift_32bit is up to date.
+Compiling vhdl file "C:/Documents and Settings/student/EE533-lab2/ORGate_32bit.vhf" in Library work.
+Architecture behavioral of Entity orgate_32bit is up to date.
+Compiling vhdl file "C:/Documents and Settings/student/EE533-lab2/AndGate_32bit.vhf" in Library work.
+Architecture behavioral of Entity andgate_32bit is up to date.
+Compiling vhdl file "C:/Documents and Settings/student/EE533-lab2/DFF_2bit.vhf" in Library work.
+Architecture behavioral of Entity dff_2bit is up to date.
+Compiling vhdl file "C:/Documents and Settings/student/EE533-lab2/DFF_32bit.vhf" in Library work.
+Architecture behavioral of Entity fd16ce_hxilinx_dff_32bit is up to date.
+Architecture behavioral of Entity dff_32bit is up to date.
+Compiling vhdl file "C:/Documents and Settings/student/EE533-lab2/Mux_32bit_4_1.vhf" in Library work.
+Architecture behavioral of Entity mux_32bit_4_1 is up to date.
+Compiling vhdl file "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.vhf" in Library work.
+Entity <alu_32bit> compiled.
+Entity <alu_32bit> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ALU_32bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FullAdder_32bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Shift_32bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ORGate_32bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <AndGate_32bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DFF_2bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DFF_32bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux_32bit_4_1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FullAdder_8bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <INV_32bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <M2_1_HXILINX_FullAdder_32bit> in library <work> (architecture <m2_1_hxilinx_fulladder_32bit_v>).
+
+Analyzing hierarchy for entity <Mux_32bit_2_1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <M2_1_HXILINX_Shift_32bit> in library <work> (architecture <m2_1_hxilinx_shift_32bit_v>).
+
+Analyzing hierarchy for entity <FD16CE_HXILINX_DFF_32bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FullAdder_1bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <INV16_HXILINX_INV_32bit> in library <work> (architecture <inv16_hxilinx_inv_32bit_v>).
+
+Analyzing hierarchy for entity <M2_1_HXILINX_Mux_32bit_2_1> in library <work> (architecture <m2_1_hxilinx_mux_32bit_2_1_v>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ALU_32bit> in library <work> (Architecture <behavioral>).
+    Set user-defined property "INIT =  0" for instance <XLXI_30> in unit <ALU_32bit>.
+    Set user-defined property "INIT =  0" for instance <XLXI_31> in unit <ALU_32bit>.
+    Set user-defined property "INIT =  0" for instance <XLXI_32> in unit <ALU_32bit>.
+    Set user-defined property "INIT =  0" for instance <XLXI_43> in unit <ALU_32bit>.
+Entity <ALU_32bit> analyzed. Unit <ALU_32bit> generated.
+
+Analyzing Entity <FullAdder_32bit> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_43_0" for instance <XLXI_43> in unit <FullAdder_32bit>.
+Entity <FullAdder_32bit> analyzed. Unit <FullAdder_32bit> generated.
+
+Analyzing Entity <FullAdder_8bit> in library <work> (Architecture <behavioral>).
+Entity <FullAdder_8bit> analyzed. Unit <FullAdder_8bit> generated.
+
+Analyzing Entity <FullAdder_1bit> in library <work> (Architecture <behavioral>).
+Entity <FullAdder_1bit> analyzed. Unit <FullAdder_1bit> generated.
+
+Analyzing Entity <INV_32bit> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_1_0" for instance <XLXI_1> in unit <INV_32bit>.
+    Set user-defined property "HU_SET =  XLXI_2_1" for instance <XLXI_2> in unit <INV_32bit>.
+Entity <INV_32bit> analyzed. Unit <INV_32bit> generated.
+
+Analyzing Entity <INV16_HXILINX_INV_32bit> in library <work> (Architecture <inv16_hxilinx_inv_32bit_v>).
+Entity <INV16_HXILINX_INV_32bit> analyzed. Unit <INV16_HXILINX_INV_32bit> generated.
+
+Analyzing Entity <M2_1_HXILINX_FullAdder_32bit> in library <work> (Architecture <m2_1_hxilinx_fulladder_32bit_v>).
+Entity <M2_1_HXILINX_FullAdder_32bit> analyzed. Unit <M2_1_HXILINX_FullAdder_32bit> generated.
+
+Analyzing Entity <Mux_32bit_2_1> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_1_0" for instance <XLXI_1> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_2_1" for instance <XLXI_2> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_3_2" for instance <XLXI_3> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_4_3" for instance <XLXI_4> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_5_4" for instance <XLXI_5> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_6_5" for instance <XLXI_6> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_7_6" for instance <XLXI_7> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_8_7" for instance <XLXI_8> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_9_15" for instance <XLXI_9> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_10_16" for instance <XLXI_10> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_11_17" for instance <XLXI_11> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_12_18" for instance <XLXI_12> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_13_19" for instance <XLXI_13> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_14_20" for instance <XLXI_14> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_15_21" for instance <XLXI_15> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_16_22" for instance <XLXI_16> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_17_31" for instance <XLXI_17> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_18_8" for instance <XLXI_18> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_19_9" for instance <XLXI_19> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_20_10" for instance <XLXI_20> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_21_11" for instance <XLXI_21> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_22_12" for instance <XLXI_22> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_23_13" for instance <XLXI_23> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_24_14" for instance <XLXI_24> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_25_23" for instance <XLXI_25> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_26_24" for instance <XLXI_26> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_27_25" for instance <XLXI_27> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_28_26" for instance <XLXI_28> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_29_27" for instance <XLXI_29> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_30_28" for instance <XLXI_30> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_31_29" for instance <XLXI_31> in unit <Mux_32bit_2_1>.
+    Set user-defined property "HU_SET =  XLXI_32_30" for instance <XLXI_32> in unit <Mux_32bit_2_1>.
+Entity <Mux_32bit_2_1> analyzed. Unit <Mux_32bit_2_1> generated.
+
+Analyzing Entity <M2_1_HXILINX_Mux_32bit_2_1> in library <work> (Architecture <m2_1_hxilinx_mux_32bit_2_1_v>).
+Entity <M2_1_HXILINX_Mux_32bit_2_1> analyzed. Unit <M2_1_HXILINX_Mux_32bit_2_1> generated.
+
+Analyzing Entity <Shift_32bit> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_1_0" for instance <XLXI_1> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_2_1" for instance <XLXI_2> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_3_2" for instance <XLXI_3> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_4_3" for instance <XLXI_4> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_5_4" for instance <XLXI_5> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_6_5" for instance <XLXI_6> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_7_6" for instance <XLXI_7> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_8_7" for instance <XLXI_8> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_9_8" for instance <XLXI_9> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_10_9" for instance <XLXI_10> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_11_10" for instance <XLXI_11> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_12_11" for instance <XLXI_12> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_13_12" for instance <XLXI_13> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_14_13" for instance <XLXI_14> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_15_14" for instance <XLXI_15> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_16_15" for instance <XLXI_16> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_17_16" for instance <XLXI_17> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_18_17" for instance <XLXI_18> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_19_18" for instance <XLXI_19> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_20_19" for instance <XLXI_20> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_21_20" for instance <XLXI_21> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_22_21" for instance <XLXI_22> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_23_22" for instance <XLXI_23> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_24_23" for instance <XLXI_24> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_25_24" for instance <XLXI_25> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_26_25" for instance <XLXI_26> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_27_26" for instance <XLXI_27> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_28_27" for instance <XLXI_28> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_29_28" for instance <XLXI_29> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_30_29" for instance <XLXI_30> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_31_30" for instance <XLXI_31> in unit <Shift_32bit>.
+    Set user-defined property "HU_SET =  XLXI_32_31" for instance <XLXI_32> in unit <Shift_32bit>.
+Entity <Shift_32bit> analyzed. Unit <Shift_32bit> generated.
+
+Analyzing Entity <M2_1_HXILINX_Shift_32bit> in library <work> (Architecture <m2_1_hxilinx_shift_32bit_v>).
+Entity <M2_1_HXILINX_Shift_32bit> analyzed. Unit <M2_1_HXILINX_Shift_32bit> generated.
+
+Analyzing Entity <ORGate_32bit> in library <work> (Architecture <behavioral>).
+Entity <ORGate_32bit> analyzed. Unit <ORGate_32bit> generated.
+
+Analyzing Entity <AndGate_32bit> in library <work> (Architecture <behavioral>).
+Entity <AndGate_32bit> analyzed. Unit <AndGate_32bit> generated.
+
+Analyzing Entity <DFF_2bit> in library <work> (Architecture <behavioral>).
+    Set user-defined property "INIT =  0" for instance <XLXI_5> in unit <DFF_2bit>.
+    Set user-defined property "INIT =  0" for instance <XLXI_6> in unit <DFF_2bit>.
+Entity <DFF_2bit> analyzed. Unit <DFF_2bit> generated.
+
+Analyzing Entity <DFF_32bit> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  XLXI_1_0" for instance <XLXI_1> in unit <DFF_32bit>.
+    Set user-defined property "HU_SET =  XLXI_2_1" for instance <XLXI_2> in unit <DFF_32bit>.
+Entity <DFF_32bit> analyzed. Unit <DFF_32bit> generated.
+
+Analyzing Entity <FD16CE_HXILINX_DFF_32bit> in library <work> (Architecture <behavioral>).
+Entity <FD16CE_HXILINX_DFF_32bit> analyzed. Unit <FD16CE_HXILINX_DFF_32bit> generated.
+
+Analyzing Entity <Mux_32bit_4_1> in library <work> (Architecture <behavioral>).
+Entity <Mux_32bit_4_1> analyzed. Unit <Mux_32bit_4_1> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <M2_1_HXILINX_FullAdder_32bit>.
+    Related source file is "C:/Documents and Settings/student/EE533-lab2/FullAdder_32bit.vhf".
+Unit <M2_1_HXILINX_FullAdder_32bit> synthesized.
+
+
+Synthesizing Unit <INV16_HXILINX_INV_32bit>.
+    Related source file is "C:/Documents and Settings/student/EE533-lab2/INV_32bit.vhf".
+Unit <INV16_HXILINX_INV_32bit> synthesized.
+
+
+Synthesizing Unit <M2_1_HXILINX_Mux_32bit_2_1>.
+    Related source file is "C:/Documents and Settings/student/EE533-lab2/Mux_32bit_2_1.vhf".
+Unit <M2_1_HXILINX_Mux_32bit_2_1> synthesized.
+
+
+Synthesizing Unit <M2_1_HXILINX_Shift_32bit>.
+    Related source file is "C:/Documents and Settings/student/EE533-lab2/Shift_32bit.vhf".
+Unit <M2_1_HXILINX_Shift_32bit> synthesized.
+
+
+Synthesizing Unit <FD16CE_HXILINX_DFF_32bit>.
+    Related source file is "C:/Documents and Settings/student/EE533-lab2/DFF_32bit.vhf".
+    Found 16-bit register for signal <Q>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <FD16CE_HXILINX_DFF_32bit> synthesized.
+
+
+Synthesizing Unit <Shift_32bit>.
+    Related source file is "C:/Documents and Settings/student/EE533-lab2/Shift_32bit.vhf".
+Unit <Shift_32bit> synthesized.
+
+
+Synthesizing Unit <ORGate_32bit>.
+    Related source file is "C:/Documents and Settings/student/EE533-lab2/ORGate_32bit.vhf".
+Unit <ORGate_32bit> synthesized.
+
+
+Synthesizing Unit <AndGate_32bit>.
+    Related source file is "C:/Documents and Settings/student/EE533-lab2/AndGate_32bit.vhf".
+Unit <AndGate_32bit> synthesized.
+
+
+Synthesizing Unit <DFF_2bit>.
+    Related source file is "C:/Documents and Settings/student/EE533-lab2/DFF_2bit.vhf".
+Unit <DFF_2bit> synthesized.
+
+
+Synthesizing Unit <DFF_32bit>.
+    Related source file is "C:/Documents and Settings/student/EE533-lab2/DFF_32bit.vhf".
+Unit <DFF_32bit> synthesized.
+
+
+Synthesizing Unit <INV_32bit>.
+    Related source file is "C:/Documents and Settings/student/EE533-lab2/INV_32bit.vhf".
+Unit <INV_32bit> synthesized.
+
+
+Synthesizing Unit <Mux_32bit_2_1>.
+    Related source file is "C:/Documents and Settings/student/EE533-lab2/Mux_32bit_2_1.vhf".
+Unit <Mux_32bit_2_1> synthesized.
+
+
+Synthesizing Unit <FullAdder_1bit>.
+    Related source file is "C:/Documents and Settings/student/EE533-lab2/FullAdder_1bit.vhf".
+Unit <FullAdder_1bit> synthesized.
+
+
+Synthesizing Unit <Mux_32bit_4_1>.
+    Related source file is "C:/Documents and Settings/student/EE533-lab2/Mux_32bit_4_1.vhf".
+Unit <Mux_32bit_4_1> synthesized.
+
+
+Synthesizing Unit <FullAdder_8bit>.
+    Related source file is "C:/Documents and Settings/student/EE533-lab2/FullAdder_8bit.vhf".
+Unit <FullAdder_8bit> synthesized.
+
+
+Synthesizing Unit <FullAdder_32bit>.
+    Related source file is "C:/Documents and Settings/student/EE533-lab2/FullAdder_32bit.vhf".
+Unit <FullAdder_32bit> synthesized.
+
+
+Synthesizing Unit <ALU_32bit>.
+    Related source file is "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.vhf".
+Unit <ALU_32bit> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 6
+ 16-bit register                                       : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '3s700a.nph' in environment C:\Xilinx\10.1\ISE.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 102
+ Flip-Flops                                            : 102
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALU_32bit> ...
+
+Optimizing unit <M2_1_HXILINX_FullAdder_32bit> ...
+
+Optimizing unit <INV16_HXILINX_INV_32bit> ...
+
+Optimizing unit <M2_1_HXILINX_Mux_32bit_2_1> ...
+
+Optimizing unit <M2_1_HXILINX_Shift_32bit> ...
+
+Optimizing unit <FD16CE_HXILINX_DFF_32bit> ...
+
+Optimizing unit <Shift_32bit> ...
+
+Optimizing unit <Mux_32bit_2_1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU_32bit, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 102
+ Flip-Flops                                            : 102
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ALU_32bit.ngr
+Top Level Output File Name         : ALU_32bit
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 105
+
+Cell Usage :
+# BELS                             : 451
+#      AND2                        : 128
+#      GND                         : 1
+#      INV                         : 33
+#      LUT3                        : 161
+#      OR2                         : 32
+#      OR3                         : 32
+#      XOR2                        : 64
+# FlipFlops/Latches                : 102
+#      FDCE                        : 102
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 104
+#      IBUF                        : 71
+#      OBUF                        : 33
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s700afg484-4 
+
+ Number of Slices:                       97  out of   5888     1%  
+ Number of Slice Flip Flops:            102  out of  11776     0%  
+ Number of 4 input LUTs:                194  out of  11776     1%  
+ Number of IOs:                         105
+ Number of bonded IOBs:                 105  out of    372    28%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 102   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RST                                | IBUF                   | 102   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 76.214ns (Maximum Frequency: 13.121MHz)
+   Minimum input arrival time before clock: 2.445ns
+   Maximum output required time after clock: 5.531ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 76.214ns (frequency: 13.121MHz)
+  Total number of paths / destination ports: 85899346092 / 33
+-------------------------------------------------------------------------
+Delay:               76.214ns (Levels of Logic = 72)
+  Source:            XLXI_39/XLXI_2/Q_0 (FF)
+  Destination:       XLXI_42/XLXI_1/Q_15 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: XLXI_39/XLXI_2/Q_0 to XLXI_42/XLXI_1/Q_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.591   0.587  Q_0 (Q<0>)
+     end scope: 'XLXI_39/XLXI_2'
+     begin scope: 'XLXI_2/XLXI_21/XLXI_2'
+     INV:I->O              1   0.648   0.452  O<0>1_INV_0 (O<0>)
+     end scope: 'XLXI_2/XLXI_21/XLXI_2'
+     begin scope: 'XLXI_2/XLXI_50/XLXI_32'
+     LUT3:I2->O            3   0.648   0.531  O1 (O)
+     end scope: 'XLXI_2/XLXI_50/XLXI_32'
+     AND2:I1->O            1   0.648   0.420  XLXI_2/XLXI_20/U0/U5 (XLXI_2/XLXI_20/U0/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_20/U0/U6 (XLXI_2/XLXI_20/XLXN_8)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_20/U1/U5 (XLXI_2/XLXI_20/U1/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_20/U1/U6 (XLXI_2/XLXI_20/XLXN_11)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_20/U2/U5 (XLXI_2/XLXI_20/U2/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_20/U2/U6 (XLXI_2/XLXI_20/XLXN_34)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_20/XLXI_11/U5 (XLXI_2/XLXI_20/XLXI_11/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_20/XLXI_11/U6 (XLXI_2/XLXI_20/XLXN_20)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_20/XLXI_12/U5 (XLXI_2/XLXI_20/XLXI_12/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_20/XLXI_12/U6 (XLXI_2/XLXI_20/XLXN_23)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_20/XLXI_13/U5 (XLXI_2/XLXI_20/XLXI_13/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_20/XLXI_13/U6 (XLXI_2/XLXI_20/XLXN_26)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_20/XLXI_14/U5 (XLXI_2/XLXI_20/XLXI_14/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_20/XLXI_14/U6 (XLXI_2/XLXI_20/XLXN_29)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_20/XLXI_15/U5 (XLXI_2/XLXI_20/XLXI_15/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_20/XLXI_15/U6 (XLXI_2/XLXN_40)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_19/U0/U5 (XLXI_2/XLXI_19/U0/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_19/U0/U6 (XLXI_2/XLXI_19/XLXN_8)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_19/U1/U5 (XLXI_2/XLXI_19/U1/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_19/U1/U6 (XLXI_2/XLXI_19/XLXN_11)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_19/U2/U5 (XLXI_2/XLXI_19/U2/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_19/U2/U6 (XLXI_2/XLXI_19/XLXN_34)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_19/XLXI_11/U5 (XLXI_2/XLXI_19/XLXI_11/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_19/XLXI_11/U6 (XLXI_2/XLXI_19/XLXN_20)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_19/XLXI_12/U5 (XLXI_2/XLXI_19/XLXI_12/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_19/XLXI_12/U6 (XLXI_2/XLXI_19/XLXN_23)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_19/XLXI_13/U5 (XLXI_2/XLXI_19/XLXI_13/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_19/XLXI_13/U6 (XLXI_2/XLXI_19/XLXN_26)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_19/XLXI_14/U5 (XLXI_2/XLXI_19/XLXI_14/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_19/XLXI_14/U6 (XLXI_2/XLXI_19/XLXN_29)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_19/XLXI_15/U5 (XLXI_2/XLXI_19/XLXI_15/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_19/XLXI_15/U6 (XLXI_2/XLXN_42)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_18/U0/U5 (XLXI_2/XLXI_18/U0/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_18/U0/U6 (XLXI_2/XLXI_18/XLXN_8)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_18/U1/U5 (XLXI_2/XLXI_18/U1/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_18/U1/U6 (XLXI_2/XLXI_18/XLXN_11)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_18/U2/U5 (XLXI_2/XLXI_18/U2/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_18/U2/U6 (XLXI_2/XLXI_18/XLXN_34)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_18/XLXI_11/U5 (XLXI_2/XLXI_18/XLXI_11/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_18/XLXI_11/U6 (XLXI_2/XLXI_18/XLXN_20)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_18/XLXI_12/U5 (XLXI_2/XLXI_18/XLXI_12/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_18/XLXI_12/U6 (XLXI_2/XLXI_18/XLXN_23)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_18/XLXI_13/U5 (XLXI_2/XLXI_18/XLXI_13/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_18/XLXI_13/U6 (XLXI_2/XLXI_18/XLXN_26)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_18/XLXI_14/U5 (XLXI_2/XLXI_18/XLXI_14/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_18/XLXI_14/U6 (XLXI_2/XLXI_18/XLXN_29)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_18/XLXI_15/U5 (XLXI_2/XLXI_18/XLXI_15/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_18/XLXI_15/U6 (XLXI_2/XLXN_45)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_17/U0/U5 (XLXI_2/XLXI_17/U0/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_17/U0/U6 (XLXI_2/XLXI_17/XLXN_8)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_17/U1/U5 (XLXI_2/XLXI_17/U1/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_17/U1/U6 (XLXI_2/XLXI_17/XLXN_11)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_17/U2/U5 (XLXI_2/XLXI_17/U2/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_17/U2/U6 (XLXI_2/XLXI_17/XLXN_34)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_17/XLXI_11/U5 (XLXI_2/XLXI_17/XLXI_11/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_17/XLXI_11/U6 (XLXI_2/XLXI_17/XLXN_20)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_17/XLXI_12/U5 (XLXI_2/XLXI_17/XLXI_12/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_17/XLXI_12/U6 (XLXI_2/XLXI_17/XLXN_23)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_17/XLXI_13/U5 (XLXI_2/XLXI_17/XLXI_13/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_17/XLXI_13/U6 (XLXI_2/XLXI_17/XLXN_26)
+     AND2:I0->O            1   0.648   0.420  XLXI_2/XLXI_17/XLXI_14/U5 (XLXI_2/XLXI_17/XLXI_14/XLXN_13)
+     OR3:I0->O             3   0.648   0.531  XLXI_2/XLXI_17/XLXI_14/U6 (XLXI_2/XLXI_17/XLXN_29)
+     XOR2:I0->O            1   0.648   0.452  XLXI_2/XLXI_17/XLXI_15/U2 (XLXN_31<31>)
+     begin scope: 'XLXI_41/XLXI_10/XLXI_1'
+     LUT3:I2->O            1   0.648   0.452  O1 (O)
+     end scope: 'XLXI_41/XLXI_10/XLXI_1'
+     begin scope: 'XLXI_41/XLXI_12/XLXI_1'
+     LUT3:I2->O            1   0.648   0.000  O1 (O)
+     end scope: 'XLXI_41/XLXI_12/XLXI_1'
+     begin scope: 'XLXI_42/XLXI_1'
+     FDCE:D                    0.252          Q_15
+    ----------------------------------------
+    Total                     76.214ns (44.259ns logic, 31.955ns route)
+                                       (58.1% logic, 41.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 171 / 171
+-------------------------------------------------------------------------
+Offset:              2.445ns (Levels of Logic = 1)
+  Source:            EN (PAD)
+  Destination:       XLXI_30 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: EN to XLXI_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           102   0.849   1.284  EN_IBUF (EN_IBUF)
+     FDCE:CE                   0.312          XLXI_30
+    ----------------------------------------
+    Total                      2.445ns (1.161ns logic, 1.284ns route)
+                                       (47.5% logic, 52.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 33 / 33
+-------------------------------------------------------------------------
+Offset:              5.531ns (Levels of Logic = 1)
+  Source:            XLXI_43 (FF)
+  Destination:       Cout (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: XLXI_43 to Cout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.591   0.420  XLXI_43 (Cout_OBUF)
+     OBUF:I->O                 4.520          Cout_OBUF (Cout)
+    ----------------------------------------
+    Total                      5.531ns (5.111ns logic, 0.420ns route)
+                                       (92.4% logic, 7.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.67 secs
+ 
+--> 
+
+Total memory usage is 176780 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

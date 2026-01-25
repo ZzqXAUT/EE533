@@ -1,0 +1,2 @@
+vhdl work "Shift_32bit.vhf"
+vhdl work "tb_SHIFT_32bit.vhw"

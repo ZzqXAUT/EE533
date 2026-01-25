@@ -1,0 +1,4 @@
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/DFF_2bit.sch" DFF_2bit.vhf
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/DFF_2bit.sch" DFF_2bit.vhf
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/DFF_2bit.sch" DFF_2bit.vhf
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/DFF_2bit.sch" DFF_2bit.vhf

@@ -1,0 +1,5 @@
+vhdl work "C:\Xilinx\10.1\ISE\ISEexamples\src\vhdl\time_cnt.vhd"
+vhdl work "C:\Documents and Settings\student\EE533-lab2\statmach.vhd"
+vhdl work "C:\Documents and Settings\student\EE533-lab2\lcd_control.vhd"
+vhdl work "C:\Documents and Settings\student\EE533-lab2\clk_div_262k.vhd"
+vhdl work "C:\Documents and Settings\student\EE533-lab2\stopwatch.vhd"

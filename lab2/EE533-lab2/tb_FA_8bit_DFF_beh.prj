@@ -1,0 +1,3 @@
+vhdl work "FullAdder_1bit.vhf"
+vhdl work "FullAdder_8bit_DFF.vhf"
+vhdl work "tb_FA_8bit_DFF.vhw"

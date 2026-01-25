@@ -1,0 +1,3 @@
+MODULE tb_FA_32bit
+SUBMODULE FullAdder_32bit
+INSTANCE UUT

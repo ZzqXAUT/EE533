@@ -1,0 +1,23 @@
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.sch" ALU_32bit.vhf
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.sch" ALU_32bit.vhf
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.sch" ALU_32bit.vhf
+xst -ise "C:/Documents and Settings/student/EE533-lab2/EE533-lab2.ise" -intstyle ise -ifn "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.xst" -ofn "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.syr"
+xst -ise "C:/Documents and Settings/student/EE533-lab2/EE533-lab2.ise" -intstyle ise -ifn "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.xst" -ofn "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.syr"
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.sch" ALU_32bit.vhf
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.sch" ALU_32bit.vhf
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.sch" ALU_32bit.vhf
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.sch" ALU_32bit.vhf
+xst -ise "C:/Documents and Settings/student/EE533-lab2/EE533-lab2.ise" -intstyle ise -ifn "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.xst" -ofn "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.syr"
+ngdbuild -ise "C:/Documents and Settings/student/EE533-lab2/EE533-lab2.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s700a-fg484-4 "ALU_32bit.ngc" ALU_32bit.ngd
+map -ise "C:/Documents and Settings/student/EE533-lab2/EE533-lab2.ise" -intstyle ise -p xc3s700a-fg484-4 -cm area -pr off -k 4 -c 100 -o ALU_32bit_map.ncd ALU_32bit.ngd ALU_32bit.pcf
+par -ise "C:/Documents and Settings/student/EE533-lab2/EE533-lab2.ise" -w -intstyle ise -ol std -t 1 ALU_32bit_map.ncd ALU_32bit.ncd ALU_32bit.pcf
+trce -ise "C:/Documents and Settings/student/EE533-lab2/EE533-lab2.ise" -intstyle ise -e 3 -s 4 -xml ALU_32bit ALU_32bit.ncd -o ALU_32bit.twr ALU_32bit.pcf
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.sch" ALU_32bit.vhf
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.sch" ALU_32bit.vhf
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.sch" ALU_32bit.vhf
+xst -ise "C:/Documents and Settings/student/EE533-lab2/EE533-lab2.ise" -intstyle ise -ifn "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.xst" -ofn "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.syr"
+ngdbuild -ise "C:/Documents and Settings/student/EE533-lab2/EE533-lab2.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s700a-fg484-4 "ALU_32bit.ngc" ALU_32bit.ngd
+map -ise "C:/Documents and Settings/student/EE533-lab2/EE533-lab2.ise" -intstyle ise -p xc3s700a-fg484-4 -cm area -pr off -k 4 -c 100 -o ALU_32bit_map.ncd ALU_32bit.ngd ALU_32bit.pcf
+par -ise "C:/Documents and Settings/student/EE533-lab2/EE533-lab2.ise" -w -intstyle ise -ol std -t 1 ALU_32bit_map.ncd ALU_32bit.ncd ALU_32bit.pcf
+trce -ise "C:/Documents and Settings/student/EE533-lab2/EE533-lab2.ise" -intstyle ise -e 3 -s 4 -xml ALU_32bit ALU_32bit.ncd -o ALU_32bit.twr ALU_32bit.pcf
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/ALU_32bit.sch" ALU_32bit.vhf

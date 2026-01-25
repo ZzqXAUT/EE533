@@ -1,0 +1,3 @@
+MODULE tb_SUB_32bit
+SUBMODULE Subtractor_32bit
+INSTANCE UUT

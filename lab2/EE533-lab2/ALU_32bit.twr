@@ -1,0 +1,170 @@
+--------------------------------------------------------------------------------
+Release 10.1 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise
+C:/Documents and Settings/student/EE533-lab2/EE533-lab2.ise -intstyle ise -e 3
+-s 4 -xml ALU_32bit ALU_32bit.ncd -o ALU_32bit.twr ALU_32bit.pcf
+
+Design file:              ALU_32bit.ncd
+Physical constraint file: ALU_32bit.pcf
+Device,package,speed:     xc3s700a,fg484,-4 (PRODUCTION 1.39 2008-01-09)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+ADD_SUB     |    0.192(R)|    0.719(R)|CLK_BUFGP         |   0.000|
+Cin         |    1.642(R)|   -0.441(R)|CLK_BUFGP         |   0.000|
+EN          |    2.054(R)|   -0.165(R)|CLK_BUFGP         |   0.000|
+LRshift     |   -0.148(R)|    0.990(R)|CLK_BUFGP         |   0.000|
+OPcode<0>   |    0.295(R)|    0.610(R)|CLK_BUFGP         |   0.000|
+OPcode<1>   |    0.129(R)|    0.744(R)|CLK_BUFGP         |   0.000|
+in1<0>      |    1.252(R)|   -0.109(R)|CLK_BUFGP         |   0.000|
+in1<1>      |    1.274(R)|   -0.126(R)|CLK_BUFGP         |   0.000|
+in1<2>      |    0.976(R)|    0.113(R)|CLK_BUFGP         |   0.000|
+in1<3>      |    1.137(R)|   -0.016(R)|CLK_BUFGP         |   0.000|
+in1<4>      |    0.598(R)|    0.384(R)|CLK_BUFGP         |   0.000|
+in1<5>      |    0.788(R)|    0.232(R)|CLK_BUFGP         |   0.000|
+in1<6>      |    0.364(R)|    0.609(R)|CLK_BUFGP         |   0.000|
+in1<7>      |    0.725(R)|    0.320(R)|CLK_BUFGP         |   0.000|
+in1<8>      |    0.064(R)|    0.836(R)|CLK_BUFGP         |   0.000|
+in1<9>      |   -0.232(R)|    1.073(R)|CLK_BUFGP         |   0.000|
+in1<10>     |   -0.201(R)|    1.060(R)|CLK_BUFGP         |   0.000|
+in1<11>     |   -0.243(R)|    1.094(R)|CLK_BUFGP         |   0.000|
+in1<12>     |    0.072(R)|    0.810(R)|CLK_BUFGP         |   0.000|
+in1<13>     |   -0.008(R)|    0.875(R)|CLK_BUFGP         |   0.000|
+in1<14>     |   -0.161(R)|    1.005(R)|CLK_BUFGP         |   0.000|
+in1<15>     |   -0.204(R)|    1.040(R)|CLK_BUFGP         |   0.000|
+in1<16>     |   -0.174(R)|    1.029(R)|CLK_BUFGP         |   0.000|
+in1<17>     |   -0.206(R)|    1.055(R)|CLK_BUFGP         |   0.000|
+in1<18>     |   -0.240(R)|    1.055(R)|CLK_BUFGP         |   0.000|
+in1<19>     |    0.214(R)|    0.692(R)|CLK_BUFGP         |   0.000|
+in1<20>     |    0.032(R)|    0.834(R)|CLK_BUFGP         |   0.000|
+in1<21>     |   -0.284(R)|    1.087(R)|CLK_BUFGP         |   0.000|
+in1<22>     |   -0.136(R)|    0.984(R)|CLK_BUFGP         |   0.000|
+in1<23>     |   -0.178(R)|    1.018(R)|CLK_BUFGP         |   0.000|
+in1<24>     |    0.174(R)|    0.732(R)|CLK_BUFGP         |   0.000|
+in1<25>     |    0.403(R)|    0.549(R)|CLK_BUFGP         |   0.000|
+in1<26>     |   -0.126(R)|    0.971(R)|CLK_BUFGP         |   0.000|
+in1<27>     |   -0.168(R)|    1.005(R)|CLK_BUFGP         |   0.000|
+in1<28>     |    0.121(R)|    0.771(R)|CLK_BUFGP         |   0.000|
+in1<29>     |   -0.183(R)|    1.015(R)|CLK_BUFGP         |   0.000|
+in1<30>     |    0.261(R)|    0.657(R)|CLK_BUFGP         |   0.000|
+in1<31>     |   -0.302(R)|    1.108(R)|CLK_BUFGP         |   0.000|
+in2<0>      |    0.000(R)|    0.869(R)|CLK_BUFGP         |   0.000|
+in2<1>      |    0.515(R)|    0.457(R)|CLK_BUFGP         |   0.000|
+in2<2>      |    0.578(R)|    0.406(R)|CLK_BUFGP         |   0.000|
+in2<3>      |    0.271(R)|    0.652(R)|CLK_BUFGP         |   0.000|
+in2<4>      |    0.894(R)|    0.160(R)|CLK_BUFGP         |   0.000|
+in2<5>      |    0.762(R)|    0.266(R)|CLK_BUFGP         |   0.000|
+in2<6>      |    0.128(R)|    0.782(R)|CLK_BUFGP         |   0.000|
+in2<7>      |    0.625(R)|    0.385(R)|CLK_BUFGP         |   0.000|
+in2<8>      |    0.407(R)|    0.557(R)|CLK_BUFGP         |   0.000|
+in2<9>      |   -0.199(R)|    1.042(R)|CLK_BUFGP         |   0.000|
+in2<10>     |    0.904(R)|    0.141(R)|CLK_BUFGP         |   0.000|
+in2<11>     |   -0.076(R)|    0.926(R)|CLK_BUFGP         |   0.000|
+in2<12>     |    0.627(R)|    0.341(R)|CLK_BUFGP         |   0.000|
+in2<13>     |    0.500(R)|    0.444(R)|CLK_BUFGP         |   0.000|
+in2<14>     |    0.979(R)|    0.087(R)|CLK_BUFGP         |   0.000|
+in2<15>     |    0.661(R)|    0.342(R)|CLK_BUFGP         |   0.000|
+in2<16>     |    0.077(R)|    0.813(R)|CLK_BUFGP         |   0.000|
+in2<17>     |   -0.089(R)|    0.946(R)|CLK_BUFGP         |   0.000|
+in2<18>     |    0.632(R)|    0.340(R)|CLK_BUFGP         |   0.000|
+in2<19>     |    0.583(R)|    0.379(R)|CLK_BUFGP         |   0.000|
+in2<20>     |    0.373(R)|    0.552(R)|CLK_BUFGP         |   0.000|
+in2<21>     |    0.798(R)|    0.213(R)|CLK_BUFGP         |   0.000|
+in2<22>     |    0.390(R)|    0.579(R)|CLK_BUFGP         |   0.000|
+in2<23>     |    0.349(R)|    0.612(R)|CLK_BUFGP         |   0.000|
+in2<24>     |    0.574(R)|    0.407(R)|CLK_BUFGP         |   0.000|
+in2<25>     |    0.718(R)|    0.292(R)|CLK_BUFGP         |   0.000|
+in2<26>     |    0.588(R)|    0.390(R)|CLK_BUFGP         |   0.000|
+in2<27>     |    0.525(R)|    0.441(R)|CLK_BUFGP         |   0.000|
+in2<28>     |    0.599(R)|    0.377(R)|CLK_BUFGP         |   0.000|
+in2<29>     |    0.593(R)|    0.382(R)|CLK_BUFGP         |   0.000|
+in2<30>     |    0.148(R)|    0.762(R)|CLK_BUFGP         |   0.000|
+in2<31>     |    0.105(R)|    0.797(R)|CLK_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock CLK to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+ANS<0>      |    8.510(R)|CLK_BUFGP         |   0.000|
+ANS<1>      |    8.982(R)|CLK_BUFGP         |   0.000|
+ANS<2>      |    8.507(R)|CLK_BUFGP         |   0.000|
+ANS<3>      |    8.061(R)|CLK_BUFGP         |   0.000|
+ANS<4>      |    8.705(R)|CLK_BUFGP         |   0.000|
+ANS<5>      |    8.659(R)|CLK_BUFGP         |   0.000|
+ANS<6>      |    8.324(R)|CLK_BUFGP         |   0.000|
+ANS<7>      |    8.636(R)|CLK_BUFGP         |   0.000|
+ANS<8>      |    8.346(R)|CLK_BUFGP         |   0.000|
+ANS<9>      |    8.179(R)|CLK_BUFGP         |   0.000|
+ANS<10>     |    8.526(R)|CLK_BUFGP         |   0.000|
+ANS<11>     |    8.253(R)|CLK_BUFGP         |   0.000|
+ANS<12>     |    8.096(R)|CLK_BUFGP         |   0.000|
+ANS<13>     |    8.746(R)|CLK_BUFGP         |   0.000|
+ANS<14>     |    8.505(R)|CLK_BUFGP         |   0.000|
+ANS<15>     |    8.463(R)|CLK_BUFGP         |   0.000|
+ANS<16>     |    8.703(R)|CLK_BUFGP         |   0.000|
+ANS<17>     |    8.105(R)|CLK_BUFGP         |   0.000|
+ANS<18>     |    7.235(R)|CLK_BUFGP         |   0.000|
+ANS<19>     |    7.231(R)|CLK_BUFGP         |   0.000|
+ANS<20>     |    7.392(R)|CLK_BUFGP         |   0.000|
+ANS<21>     |    8.201(R)|CLK_BUFGP         |   0.000|
+ANS<22>     |    8.245(R)|CLK_BUFGP         |   0.000|
+ANS<23>     |    7.200(R)|CLK_BUFGP         |   0.000|
+ANS<24>     |    7.487(R)|CLK_BUFGP         |   0.000|
+ANS<25>     |    7.152(R)|CLK_BUFGP         |   0.000|
+ANS<26>     |    8.275(R)|CLK_BUFGP         |   0.000|
+ANS<27>     |    8.280(R)|CLK_BUFGP         |   0.000|
+ANS<28>     |    8.043(R)|CLK_BUFGP         |   0.000|
+ANS<29>     |    7.415(R)|CLK_BUFGP         |   0.000|
+ANS<30>     |    7.216(R)|CLK_BUFGP         |   0.000|
+ANS<31>     |    8.053(R)|CLK_BUFGP         |   0.000|
+Cout        |    8.400(R)|CLK_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |   29.904|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sat Jan 24 17:30:02 2026 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 120 MB
+
+
+

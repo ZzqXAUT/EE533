@@ -1,0 +1,5 @@
+xst -ise "C:/Documents and Settings/student/EE533-lab2/EE533verilog/EE533verilog.ise" -intstyle ise -ifn "C:/Documents and Settings/student/EE533-lab2/EE533verilog/Alu32.xst" -ofn "C:/Documents and Settings/student/EE533-lab2/EE533verilog/Alu32.syr"
+ngdbuild -ise "C:/Documents and Settings/student/EE533-lab2/EE533verilog/EE533verilog.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s700a-fg484-4 "Alu32.ngc" Alu32.ngd
+map -ise "C:/Documents and Settings/student/EE533-lab2/EE533verilog/EE533verilog.ise" -intstyle ise -p xc3s700a-fg484-4 -cm area -pr off -k 4 -c 100 -o Alu32_map.ncd Alu32.ngd Alu32.pcf
+par -ise "C:/Documents and Settings/student/EE533-lab2/EE533verilog/EE533verilog.ise" -w -intstyle ise -ol std -t 1 Alu32_map.ncd Alu32.ncd Alu32.pcf
+trce -ise "C:/Documents and Settings/student/EE533-lab2/EE533verilog/EE533verilog.ise" -intstyle ise -e 3 -s 4 -xml Alu32 Alu32.ncd -o Alu32.twr Alu32.pcf

@@ -1,0 +1,2 @@
+vhdl work "ORGate_32bit.vhf"
+vhdl work "tb_OR_32bit.vhw"

@@ -1,0 +1,445 @@
+Release 10.1 Map K.31 (nt)
+Xilinx Mapping Report File for Design 'ALU_32bit'
+
+Design Information
+------------------
+Command Line   : map -ise "C:/Documents and
+Settings/student/EE533-lab2/EE533-lab2.ise" -intstyle ise -p xc3s700a-fg484-4
+-cm area -pr off -k 4 -c 100 -o ALU_32bit_map.ncd ALU_32bit.ngd ALU_32bit.pcf 
+Target Device  : xc3s700a
+Target Package : fg484
+Target Speed   : -4
+Mapper Version : spartan3a -- $Revision: 1.46 $
+Mapped Date    : Sat Jan 24 17:29:54 2026
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:           102 out of  11,776    1%
+  Number of 4 input LUTs:               190 out of  11,776    1%
+Logic Distribution:
+  Number of occupied Slices:            131 out of   5,888    2%
+    Number of Slices containing only related logic:     131 out of     131 100%
+    Number of Slices containing unrelated logic:          0 out of     131   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         190 out of  11,776    1%
+  Number of bonded IOBs:                105 out of     372   28%
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+Peak Memory Usage:  168 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Control Set Information
+Section 14 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XLXI_2/XLXI_23
+INV 		XLXI_2/XLXI_24
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
+|                                    |                  |           |             | Strength | Rate    |              |          | Delay    |                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ADD_SUB                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| ANS<0>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<1>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<2>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<3>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<4>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<5>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<6>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<7>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<8>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<9>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<10>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<11>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<12>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<13>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<14>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<15>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<16>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<17>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<18>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<19>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<20>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<21>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<22>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<23>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<24>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<25>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<26>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<27>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<28>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<29>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<30>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| ANS<31>                            | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CLK                                | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| Cin                                | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| Cout                               | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| EN                                 | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| LRshift                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| OPcode<0>                          | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| OPcode<1>                          | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| RST                                | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<0>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<1>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<2>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<3>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<4>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<5>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<6>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<7>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<8>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<9>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<10>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<11>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<12>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<13>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<14>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<15>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<16>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<17>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<18>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<19>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<20>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<21>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<22>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<23>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<24>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<25>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<26>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<27>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<28>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<29>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<30>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in1<31>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<0>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<1>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<2>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<3>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<4>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<5>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<6>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<7>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<8>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<9>                             | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<10>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<11>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<12>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<13>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<14>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<15>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<16>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<17>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<18>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<19>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<20>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<21>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<22>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<23>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<24>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<25>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<26>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<27>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<28>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<29>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<30>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
+| in2<31>                            | IBUF             | INPUT     | LVCMOS25    |          |         |              |          | 0 / 0    |                  |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 14 - Utilization by Hierarchy
+-------------------------------------
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module             | Partition | Slices        | Slice Reg     | LUTs          | LUTRAM        | BRAM      | MULT18X18 | BUFG  | DCM   | Full Hierarchical Name            |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ALU_32bit/         |           | 3/258         | 4/102         | 0/190         | 0/0           | 0/0       | 0/0       | 1/1   | 0/0   | ALU_32bit                         |
+| +XLXI_2            |           | 0/64          | 0/0           | 0/64          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2                  |
+| ++XLXI_17          |           | 0/16          | 0/0           | 0/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_17          |
+| +++U0              |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_17/U0       |
+| +++U1              |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_17/U1       |
+| +++U2              |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_17/U2       |
+| +++XLXI_11         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_17/XLXI_11  |
+| +++XLXI_12         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_17/XLXI_12  |
+| +++XLXI_13         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_17/XLXI_13  |
+| +++XLXI_14         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_17/XLXI_14  |
+| +++XLXI_15         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_17/XLXI_15  |
+| ++XLXI_18          |           | 0/16          | 0/0           | 0/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_18          |
+| +++U0              |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_18/U0       |
+| +++U1              |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_18/U1       |
+| +++U2              |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_18/U2       |
+| +++XLXI_11         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_18/XLXI_11  |
+| +++XLXI_12         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_18/XLXI_12  |
+| +++XLXI_13         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_18/XLXI_13  |
+| +++XLXI_14         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_18/XLXI_14  |
+| +++XLXI_15         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_18/XLXI_15  |
+| ++XLXI_19          |           | 0/16          | 0/0           | 0/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_19          |
+| +++U0              |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_19/U0       |
+| +++U1              |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_19/U1       |
+| +++U2              |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_19/U2       |
+| +++XLXI_11         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_19/XLXI_11  |
+| +++XLXI_12         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_19/XLXI_12  |
+| +++XLXI_13         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_19/XLXI_13  |
+| +++XLXI_14         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_19/XLXI_14  |
+| +++XLXI_15         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_19/XLXI_15  |
+| ++XLXI_20          |           | 0/16          | 0/0           | 0/16          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_20          |
+| +++U0              |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_20/U0       |
+| +++U1              |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_20/U1       |
+| +++U2              |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_20/U2       |
+| +++XLXI_11         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_20/XLXI_11  |
+| +++XLXI_12         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_20/XLXI_12  |
+| +++XLXI_13         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_20/XLXI_13  |
+| +++XLXI_14         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_20/XLXI_14  |
+| +++XLXI_15         |           | 2/2           | 0/0           | 2/2           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_2/XLXI_20/XLXI_15  |
+| +XLXI_3            |           | 0/30          | 0/0           | 0/30          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3                  |
+| ++XLXI_1           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_1           |
+| ++XLXI_10          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_10          |
+| ++XLXI_11          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_11          |
+| ++XLXI_12          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_12          |
+| ++XLXI_13          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_13          |
+| ++XLXI_14          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_14          |
+| ++XLXI_15          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_15          |
+| ++XLXI_16          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_16          |
+| ++XLXI_17          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_17          |
+| ++XLXI_18          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_18          |
+| ++XLXI_19          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_19          |
+| ++XLXI_2           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_2           |
+| ++XLXI_20          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_20          |
+| ++XLXI_21          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_21          |
+| ++XLXI_22          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_22          |
+| ++XLXI_23          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_23          |
+| ++XLXI_24          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_24          |
+| ++XLXI_25          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_25          |
+| ++XLXI_26          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_26          |
+| ++XLXI_27          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_27          |
+| ++XLXI_3           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_3           |
+| ++XLXI_30          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_30          |
+| ++XLXI_31          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_31          |
+| ++XLXI_32          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_32          |
+| ++XLXI_4           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_4           |
+| ++XLXI_5           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_5           |
+| ++XLXI_6           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_6           |
+| ++XLXI_7           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_7           |
+| ++XLXI_8           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_8           |
+| ++XLXI_9           |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_3/XLXI_9           |
+| +XLXI_36           |           | 1/1           | 2/2           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_36                 |
+| +XLXI_39           |           | 0/16          | 0/32          | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_39                 |
+| ++XLXI_1           |           | 8/8           | 16/16         | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_39/XLXI_1          |
+| ++XLXI_2           |           | 8/8           | 16/16         | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_39/XLXI_2          |
+| +XLXI_40           |           | 0/16          | 0/32          | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_40                 |
+| ++XLXI_1           |           | 8/8           | 16/16         | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_40/XLXI_1          |
+| ++XLXI_2           |           | 8/8           | 16/16         | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_40/XLXI_2          |
+| +XLXI_41           |           | 0/96          | 0/0           | 0/96          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41                 |
+| ++XLXI_10          |           | 0/32          | 0/0           | 0/32          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10         |
+| +++XLXI_1          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_1  |
+| +++XLXI_10         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_10 |
+| +++XLXI_11         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_11 |
+| +++XLXI_12         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_12 |
+| +++XLXI_13         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_13 |
+| +++XLXI_14         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_14 |
+| +++XLXI_15         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_15 |
+| +++XLXI_16         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_16 |
+| +++XLXI_17         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_17 |
+| +++XLXI_18         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_18 |
+| +++XLXI_19         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_19 |
+| +++XLXI_2          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_2  |
+| +++XLXI_20         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_20 |
+| +++XLXI_21         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_21 |
+| +++XLXI_22         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_22 |
+| +++XLXI_23         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_23 |
+| +++XLXI_24         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_24 |
+| +++XLXI_25         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_25 |
+| +++XLXI_26         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_26 |
+| +++XLXI_27         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_27 |
+| +++XLXI_28         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_28 |
+| +++XLXI_29         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_29 |
+| +++XLXI_3          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_3  |
+| +++XLXI_30         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_30 |
+| +++XLXI_31         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_31 |
+| +++XLXI_32         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_32 |
+| +++XLXI_4          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_4  |
+| +++XLXI_5          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_5  |
+| +++XLXI_6          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_6  |
+| +++XLXI_7          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_7  |
+| +++XLXI_8          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_8  |
+| +++XLXI_9          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_10/XLXI_9  |
+| ++XLXI_11          |           | 0/32          | 0/0           | 0/32          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11         |
+| +++XLXI_1          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_1  |
+| +++XLXI_10         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_10 |
+| +++XLXI_11         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_11 |
+| +++XLXI_12         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_12 |
+| +++XLXI_13         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_13 |
+| +++XLXI_14         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_14 |
+| +++XLXI_15         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_15 |
+| +++XLXI_16         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_16 |
+| +++XLXI_17         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_17 |
+| +++XLXI_18         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_18 |
+| +++XLXI_19         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_19 |
+| +++XLXI_2          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_2  |
+| +++XLXI_20         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_20 |
+| +++XLXI_21         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_21 |
+| +++XLXI_22         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_22 |
+| +++XLXI_23         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_23 |
+| +++XLXI_24         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_24 |
+| +++XLXI_25         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_25 |
+| +++XLXI_26         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_26 |
+| +++XLXI_27         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_27 |
+| +++XLXI_28         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_28 |
+| +++XLXI_29         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_29 |
+| +++XLXI_3          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_3  |
+| +++XLXI_30         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_30 |
+| +++XLXI_31         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_31 |
+| +++XLXI_32         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_32 |
+| +++XLXI_4          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_4  |
+| +++XLXI_5          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_5  |
+| +++XLXI_6          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_6  |
+| +++XLXI_7          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_7  |
+| +++XLXI_8          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_8  |
+| +++XLXI_9          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_11/XLXI_9  |
+| ++XLXI_12          |           | 0/32          | 0/0           | 0/32          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12         |
+| +++XLXI_1          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_1  |
+| +++XLXI_10         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_10 |
+| +++XLXI_11         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_11 |
+| +++XLXI_12         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_12 |
+| +++XLXI_13         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_13 |
+| +++XLXI_14         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_14 |
+| +++XLXI_15         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_15 |
+| +++XLXI_16         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_16 |
+| +++XLXI_17         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_17 |
+| +++XLXI_18         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_18 |
+| +++XLXI_19         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_19 |
+| +++XLXI_2          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_2  |
+| +++XLXI_20         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_20 |
+| +++XLXI_21         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_21 |
+| +++XLXI_22         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_22 |
+| +++XLXI_23         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_23 |
+| +++XLXI_24         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_24 |
+| +++XLXI_25         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_25 |
+| +++XLXI_26         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_26 |
+| +++XLXI_27         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_27 |
+| +++XLXI_28         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_28 |
+| +++XLXI_29         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_29 |
+| +++XLXI_3          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_3  |
+| +++XLXI_30         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_30 |
+| +++XLXI_31         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_31 |
+| +++XLXI_32         |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_32 |
+| +++XLXI_4          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_4  |
+| +++XLXI_5          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_5  |
+| +++XLXI_6          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_6  |
+| +++XLXI_7          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_7  |
+| +++XLXI_8          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_8  |
+| +++XLXI_9          |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_41/XLXI_12/XLXI_9  |
+| +XLXI_42           |           | 0/32          | 0/32          | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_42                 |
+| ++XLXI_1           |           | 16/16         | 16/16         | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_42/XLXI_1          |
+| ++XLXI_2           |           | 16/16         | 16/16         | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | ALU_32bit/XLXI_42/XLXI_2          |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.

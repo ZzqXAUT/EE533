@@ -1,0 +1,6 @@
+vhdl work "FullAdder_1bit.vhf"
+vhdl work "Mux_32bit_2_1.vhf"
+vhdl work "INV_32bit.vhf"
+vhdl work "FullAdder_8bit.vhf"
+vhdl work "FullAdder_32bit.vhf"
+vhdl work "tb_FA_32bit.vhw"

@@ -1,0 +1,2 @@
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/faddsch.sch" faddsch.vhf
+sch2vhdl -intstyle ise -family spartan3a -flat -suppress -w "C:/Documents and Settings/student/EE533-lab2/faddsch.sch" faddsch.vhf

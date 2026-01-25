@@ -1,0 +1,8 @@
+select figure at 860 1011 6 -branches -sn=1
+select figure at 858 1009 6 -branches -sn=1
+select figure at 739 969 6 -branches -sn=1
+select figure at 738 968 6 -branches -sn=1
+select figure at 1004 709 6 -branches -sn=1
+select all in 1003 707 2320 1595 -branches -enclosed -noattrwin -sn=1
+select figure at 1007 711 6 -branches -sn=1
+select all in 1006 709 2328 1591 -branches -enclosed -noattrwin -sn=1

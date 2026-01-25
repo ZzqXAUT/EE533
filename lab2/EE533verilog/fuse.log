@@ -1,0 +1,21 @@
+Determining compilation order of HDL files
+Analyzing Verilog file ALU.v
+Analyzing Verilog file tb_ALU.v
+Analyzing Verilog file C:/Xilinx/10.1/ISE/verilog/src/glbl.v
+Saving Verilog parse-tree work.Alu32 into c:/documents and
+settings/student/ee533-lab2/ee533verilog/isim/work/@alu32.sdb
+Saving Verilog parse-tree work.tb_Alu32 into c:/documents and
+settings/student/ee533-lab2/ee533verilog/isim/work/tb_@alu32.sdb
+Saving Verilog parse-tree work.glbl into c:/documents and
+settings/student/ee533-lab2/ee533verilog/isim/work/glbl.sdb
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 54152 Kb
+Fuse CPU Usage: 77 ms
+Compiling module glbl
+Compiling module Alu32
+Compiling module tb_Alu32
+Compiled 3 Verilog Units
+Built simulation executable tb_Alu32_isim_beh.exe
+Fuse Memory Usage: 55436 Kb
+Fuse CPU Usage: 109 ms
