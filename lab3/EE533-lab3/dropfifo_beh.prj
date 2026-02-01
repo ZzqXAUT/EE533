@@ -1,0 +1,4 @@
+vhdl work "reg9B.vhf"
+verilog work "dualport9B.v"
+vhdl work "dropfifo.vhf"
+verilog work "C:/Xilinx/10.1/ISE/verilog/src/glbl.v"

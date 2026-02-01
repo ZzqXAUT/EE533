@@ -1,0 +1,9 @@
+[Inputs]
+=da[47:0]=
+=db[63:0]=
+[Outputs]
+=q[111:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel busmerge
+

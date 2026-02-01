@@ -1,0 +1,3 @@
+MODULE tb_comp8
+SUBMODULE comp8
+INSTANCE UUT

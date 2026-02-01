@@ -1,0 +1,34 @@
+Determining compilation order of HDL files
+Analyzing VHDL file ids_tb.vhw
+Restoring VHDL parse-tree ieee.std_logic_textio from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_textio.vdb
+Restoring VHDL parse-tree std.standard from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/standard.vdb
+Restoring VHDL parse-tree std.textio from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/textio.vdb
+Restoring VHDL parse-tree ieee.std_logic_1164 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree ieee.std_logic_arith from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_arith.vdb
+Restoring VHDL parse-tree ieee.std_logic_unsigned from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_unsigned.vdb
+Saving VHDL parse-tree work.ids_tb into c:/documents and
+settings/student/ee533-lab3/isim/work/ids_tb.vdb
+Starting static elaboration
+WARNING:HDLCompiler:89 - "ids_tb.vhw" Line 86. ids_sim remains a black-box since
+   it has no binding entity
+Completed static elaboration
+Fuse Memory Usage: 55176 Kb
+Fuse CPU Usage: 203 ms
+Using precompiled package standard from library std
+Using precompiled package textio from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package std_logic_textio from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+WARNING:Simulator:648 - "ids_tb.vhw" Line 86. Instance ids_sim is unbound
+Compiling architecture testbench_arch of entity ids_tb
+Compiled 7 VHDL Units
+Built simulation executable ids_tb_isim_beh.exe
+Fuse Memory Usage: 56460 Kb
+Fuse CPU Usage: 234 ms

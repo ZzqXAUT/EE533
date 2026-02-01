@@ -1,0 +1,10 @@
+# Output products list for <dualport9B>
+dualport9B.asy
+dualport9B.ngc
+dualport9B.v
+dualport9B.veo
+dualport9B.vhd
+dualport9B.vho
+dualport9B.xco
+dualport9B_flist.txt
+dualport9B_xmdf.tcl

@@ -1,0 +1,2 @@
+sch2vhdl -intstyle ise -family virtex2p -flat -suppress -w "C:/Documents and Settings/student/EE533-lab3/comp32.sch" comp32.vhf
+sch2vhdl -intstyle ise -family virtex2p -flat -suppress -w "C:/Documents and Settings/student/EE533-lab3/comp32.sch" comp32.vhf
